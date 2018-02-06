@@ -1,1 +1,2 @@
-#My first try for git
+#MYFIRSTTRYFORGIT
+learning git
