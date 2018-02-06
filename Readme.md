@@ -1,2 +1,2 @@
-#MYFIRSTTRYFORGIT
-learning git
+# My First Git repo
+*Learning git*
