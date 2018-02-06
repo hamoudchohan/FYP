@@ -81,18 +81,16 @@ input:hover {
   top: -18px;
   left: -9px;
   color: #fff;
-  
 }
 
 .bd-heart {
-    background: #F20E0E;
-    border-radius: 50px;
-    position: relative;
-    top: -18px;
-    left: -9px;
-    color: #fff;
+  background: #F20E0E;
+  border-radius: 50px;
+  position: relative;
+  top: -18px;
+  left: -9px;
+  color: #fff;
 }
-
 
 /* --------------------- 
 HERO SECTION
@@ -108,9 +106,9 @@ HERO SECTION
 }
 
 #hero h2 {
-  font-family: 'Pacifico',sans-serif;
+  font-family: 'Pacifico', sans-serif;
   transform: skewY(6deg);
-  margin-top: 82px;
+  margin-top: 72px;
 }
 
 #hero h1 {
@@ -130,6 +128,8 @@ HERO SECTION
   color: #fff;
   border-radius: 0;
   transition: .5s ease-out;
+  padding: 10px 40px;
+  text-transform: uppercase;
 }
 
 .btn-reverse:hover {
@@ -154,23 +154,21 @@ HERO SECTION
   position: relative;
 }
 
-
-
-
-
 /* media Queryies */
 
-
-
 @media only screen and (max-width: 1024px) {
-    #hero h1 {
-      font-size: 115px;
-    }
+  #hero h1 {
+    font-size: 115px;
+  }
 }
 
 @media only screen and (max-width: 980px) {
+  body {
+    text-align: center;
+  }
+
   #hero h1 {
-    font-size: 85px;
+    font-size: 110px;
   }
   .search-bar {
     max-width: 100% !important;
@@ -180,9 +178,19 @@ HERO SECTION
 }
 
 @media only screen and (max-width: 800px) {
-   #hero {
-     height: 500px;
-   }
+  #hero h1 {
+     font-size: 95px;
+  }
+  #hero {
+    height: 500px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 0px;
+  }
+  .btn-reverse {
+    padding: 15px 50px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -193,19 +201,25 @@ HERO SECTION
     padding-top: 30px;
   }
   #hero h1 {
-    font-size: 63px;
- }
+     font-size: 75px;
+  }
+  .btn-reverse {
+    padding: 10px 20px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
- #hero {
-   height: 320px;
- }
+  #hero {
+    height: 320px;
+  }
+  #hero h1 {
+     font-size: 60px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
   #hero h1 {
-    font-size: 48px;
+    font-size: 50px;
   }
 }
 
