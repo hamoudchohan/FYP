@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,8 +29,8 @@
   position: relative;
   width: 31.33333%;
   margin: 1%;
-  background: whiteSmoke;
-  box-shadow: 2px 1px 5px #999;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.651);
 }
 
 @media (max-width: 815px) {
@@ -90,11 +94,11 @@
 }
 
 .card__buttons a:last-child {
-  background: #F8CF06;
+  background: #ffde00;
 }
 
 .card__buttons a:hover {
-  color: #F8CF06;
+  color: #ffde00;
   background: #000;
 }
 
@@ -121,6 +125,7 @@
 
 .card__icons .fa {
   font-size: .8rem;
+  color: #F8CF06
 }
 
 .card__icons .fa:before {
