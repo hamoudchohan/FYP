@@ -184,6 +184,18 @@ HERO SECTION
   opacity: 1;
 }
 
+#gender .men img:hover {
+  transition: .5s ease;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.651));
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#gender .women img:hover {
+  transition: .5s ease;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.651));
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
 .overlay-gender {
   position: absolute;
   top: 10;
@@ -198,16 +210,82 @@ HERO SECTION
 }
 
 #gender .women img {
-  width: 400px;
+  width: 300px;
   display: block;
   margin: auto;
+  /* -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.651));
+  filter: drop-shadow(5px 5px 5px #222); */
 }
 
 #gender .men img {
-  width: 400px;
+  width: 300px;
   display: block;
   margin: auto;
+  /* -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.651));
+  filter: drop-shadow(5px 5px 5px #222); */
 }
+
+
+/* browse and shop */
+#browse-shop h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media Queryies */
 
