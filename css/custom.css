@@ -143,7 +143,7 @@ HERO SECTION
 }
 
 #hero p {
-  padding-top: 75px;
+  padding-top: 45px;
   color: #fff;
 }
 
@@ -154,7 +154,63 @@ HERO SECTION
   position: relative;
 }
 
+/* Gender Section */
+
+#gender h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#gender .text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#gender .women:hover .overlay-gender {
+  opacity: 1;
+}
+
+#gender .men:hover .overlay-gender {
+  opacity: 1;
+}
+
+.overlay-gender {
+  position: absolute;
+  top: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+#gender .women img {
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+
+#gender .men img {
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+
 /* media Queryies */
+
 /* 
 @media only screen and (max-width: 1024px) {
   #hero h1 {
