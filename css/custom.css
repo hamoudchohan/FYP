@@ -228,6 +228,10 @@ HERO SECTION
 
 
 /* browse and shop */
+#browse-shop {
+  background: #f3f2f0;
+}
+
 #browse-shop h2 {
   text-align: center;
   text-transform: uppercase;
@@ -235,16 +239,96 @@ HERO SECTION
   text-decoration: underline;
 }
 
+/* brand slider */
+
+#brand-slider {
+  background: #f3f2f0;
+}
 
 
 
+/* Footer */
+
+#footer-sub {
+  background-color: #262727;
+  border-top: 1px solid #dbdbdb;
+}
 
 
 
+#footer-sub h5 {
+  color: #fff;
+  margin-top: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+#footer-sub ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#footer-sub hr {
+  margin: 5px;
+}
+
+#footer-sub ul li {
+  margin-left: -38px;
+}
+
+#footer-sub a:link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+#footer-sub a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer-sub a:hover {
+  text-decoration: none;
+  color: #F8CF06;
+
+}
+
+#footer-sub a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.vertical-line {
+  border-right: 1px solid #dbdbdb;
+  margin: 8px;
+  padding: 0px;
+}
+
+#sub-two .fa {
+  color: #fff;
+  font-size: 35px;
+}
 
 
+#sub-two {
+  margin: 0px;
+  padding: 0px;
+}
 
+#sub-two .vertical-line h4 {
+  color: #fff;
+}
 
+.social-btn .fa{
+  color: #fff;
+  font-size: 35px;
+  padding: 3px;
+}
+
+.social-btn .fa:hover {
+  color: #F8CF06;
+}
 
 
 
