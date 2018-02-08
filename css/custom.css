@@ -1,6 +1,7 @@
 /* F8CF06 */
 body {
   font-family: 'Raleway', sans-serif;
+  padding-top: 70px;
 }
 
 .navbar {
@@ -322,7 +323,7 @@ HERO SECTION
 
 .social-btn .fa{
   color: #fff;
-  font-size: 35px;
+  font-size: 25px;
   padding: 3px;
 }
 
