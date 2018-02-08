@@ -13,6 +13,14 @@ body {
   text-transform: uppercase;
 }
 
+.navbar-brand {
+  font-weight: 900;
+}
+
+.navbar-brand span:hover {
+  color: #F8CF06;
+}
+
 .nav-link {
   color: #000000 !important;
 }
@@ -178,6 +186,14 @@ HERO SECTION
   text-align: center;
 }
 
+#gender .women {
+  background: #ec363d;
+}
+
+#gender .men {
+  background: #F8CF06;
+}
+
 #gender .women:hover .overlay-gender {
   opacity: 1;
 }
@@ -244,14 +260,52 @@ HERO SECTION
 
 #brand-slider {
   background: #f3f2f0;
+  height: 300px;
+
+}
+
+#brand-slider .owl-carousel {
+  margin-top: 50px;
+}
+
+
+/* about */
+
+#about {
+  background: #f3f2f0;
+}
+
+#about .container {
+  background: #FFF;
+}
+
+#about h3 {
+  border-top: 5px solid #000000;
+  padding-top: 15px;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 
 
-/* Footer */
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+/* #262727 */
 #footer-sub {
-  background-color: #262727;
+  background-color: #000000;
   border-top: 1px solid #dbdbdb;
 }
 
@@ -262,6 +316,7 @@ HERO SECTION
   margin-top: 25px;
   font-weight: bold;
   text-decoration: underline;
+  text-transform: uppercase;
 
 }
 

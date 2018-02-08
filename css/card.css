@@ -47,7 +47,7 @@
 
 .card__inner {
   position: relative;
-  background: url("https://unsplash.it/400?random") no-repeat;
+  background: url("../img/jeans.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
 }
