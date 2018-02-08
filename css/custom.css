@@ -33,30 +33,30 @@ body {
   background-color: #FFFFFF !important;
 }
 
-input {
+.navbar input {
   border-radius: 100px !important;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.486);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-input:hover {
+.navbar input:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.input-group>.custom-file:focus,
-.input-group>.custom-select:focus,
+.navbar .input-group>.custom-file:focus,
+ .input-group>.custom-select:focus,
 .input-group>.form-control:focus {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.input-group-btn .btn {
+.navbar .input-group-btn .btn {
   border-radius: 50px !important;
   padding: 5px 15px 5px 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.507), 0 3px 6px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.input-group-btn .btn:hover {
+.navbar .input-group-btn .btn:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -405,13 +405,41 @@ HERO SECTION
   position: relative;
   min-height: 60vh;
   text-align: center;
-  background: url('../img/left-reg-bg.jpg') no-repeat center;
+  background : linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%),
+  url('../img/left-reg-bg.jpg') no-repeat center;
   background-size: cover;
+
 }
 
-.left-reg-title {
+.left-reg-text {
+  background: black;
+  color: white;
+  width: 200px;
+  height: 100px;
+  margin: -70px 0 0 -120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.left-reg-text .left-reg-title {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
   text-decoration: underline;
 }
+
+.left-reg .left-reg-text h4 {
+  color: #fff;
+}
+
+.right-reg {
+  float: left;
+}
+
+
+
+
+
+
+
