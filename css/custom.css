@@ -387,108 +387,31 @@ HERO SECTION
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media Queryies */
-
-/* 
-@media only screen and (max-width: 1024px) {
-  #hero h1 {
-    font-size: 115px;
-  }
+/* regsiter page */
+.register-body {
+  background: #f3f2f0;
 }
 
-@media only screen and (max-width: 980px) {
-  body {
-    text-align: center;
-  }
-
-  #hero h1 {
-    font-size: 110px;
-  }
-  .search-bar {
-    max-width: 100% !important;
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-  }
+#register {
+  background: #fff;
+  width: 70%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
-@media only screen and (max-width: 800px) {
-  #hero h1 {
-     font-size: 95px;
-  }
-  #hero {
-    height: 500px;
-  }
-  h3 {
-    font-size: 16px;
-    margin: 0px;
-  }
-  .btn-reverse {
-    padding: 15px 50px;
-  }
+.left-reg {
+  position: relative;
+  min-height: 60vh;
+  text-align: center;
+  background: url('../img/left-reg-bg.jpg') no-repeat center;
+  background-size: cover;
 }
 
-@media only screen and (max-width: 640px) {
-  #hero {
-    height: 360px;
-  }
-  #hero .container {
-    padding-top: 30px;
-  }
-  #hero h1 {
-     font-size: 75px;
-  }
-  .btn-reverse {
-    padding: 10px 20px;
-  }
+.left-reg-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
 }
-
-@media only screen and (max-width: 480px) {
-  #hero {
-    height: 320px;
-  }
-  #hero h1 {
-     font-size: 60px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  #hero h1 {
-    font-size: 50px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #hero h1 {
-    font-size: 40px;
-  }
-} */
