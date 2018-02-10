@@ -1,4 +1,5 @@
 /* F8CF06 */
+
 body {
   font-family: 'Raleway', sans-serif;
   padding-top: 70px;
@@ -34,17 +35,25 @@ body {
 }
 
 .navbar input {
-  border-radius: 100px !important;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.486);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.navbar .form-control:focus {
+  border-color: #000000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+  0 0 8px rgb(0, 0, 0, 0.075);
+  transition: .5s ease-out;
+  border-radius: 50px !important;
 }
 
 .navbar input:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .5s ease-out;
+  border-radius: 50px !important;
 }
 
 .navbar .input-group>.custom-file:focus,
- .input-group>.custom-select:focus,
+.input-group>.custom-select:focus,
 .input-group>.form-control:focus {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -243,8 +252,8 @@ HERO SECTION
   filter: drop-shadow(5px 5px 5px #222); */
 }
 
-
 /* browse and shop */
+
 #browse-shop {
   background: #f3f2f0;
 }
@@ -261,13 +270,11 @@ HERO SECTION
 #brand-slider {
   background: #f3f2f0;
   height: 300px;
-
 }
 
 #brand-slider .owl-carousel {
   margin-top: 50px;
 }
-
 
 /* about */
 
@@ -287,29 +294,14 @@ HERO SECTION
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
+
 /* #262727 */
+
 #footer-sub {
   background-color: #000000;
   border-top: 1px solid #dbdbdb;
 }
-
-
 
 #footer-sub h5 {
   color: #fff;
@@ -317,7 +309,6 @@ HERO SECTION
   font-weight: bold;
   text-decoration: underline;
   text-transform: uppercase;
-
 }
 
 #footer-sub ul {
@@ -347,7 +338,6 @@ HERO SECTION
 #footer-sub a:hover {
   text-decoration: none;
   color: #F8CF06;
-
 }
 
 #footer-sub a:active {
@@ -366,7 +356,6 @@ HERO SECTION
   font-size: 35px;
 }
 
-
 #sub-two {
   margin: 0px;
   padding: 0px;
@@ -376,7 +365,7 @@ HERO SECTION
   color: #fff;
 }
 
-.social-btn .fa{
+.social-btn .fa {
   color: #fff;
   font-size: 25px;
   padding: 3px;
@@ -386,6 +375,76 @@ HERO SECTION
   color: #F8CF06;
 }
 
+/* register */
 
+.register-body {
+  background-color: #f3f2f0;
+}
 
+#register {
+  background-color: #FFF;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+#register h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#register p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#register legend span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#register .btn-default {
+  background-color: #000000;
+  color: #FFF;
+  border-radius: 100px;
+}
+
+#register .btn-default:hover {
+  color: #F8CF06;
+  background-color: #000000f3;
+}
+
+#register .form-control {
+  border-radius: 50px;
+}
+
+#register .form-control:focus {
+  border-color: #F8CF06;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(248, 190, 0);
+}
+
+#register .legal-agreement {
+  font-size: 12px;
+}
+
+#register .legal-agreement a {
+  text-decoration: none;
+}
+
+#register .have-account {
+  font-weight: 300px;
+}
+
+#register .have-account a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#register .have-account a:hover {
+  color: #F8CF06;
+}
