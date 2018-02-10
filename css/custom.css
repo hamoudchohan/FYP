@@ -387,59 +387,5 @@ HERO SECTION
 }
 
 
-/* regsiter page */
-.register-body {
-  background: #f3f2f0;
-}
-
-#register {
-  background: #fff;
-  width: 70%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.left-reg {
-  position: relative;
-  min-height: 60vh;
-  text-align: center;
-  background : linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%),
-  url('../img/left-reg-bg.jpg') no-repeat center;
-  background-size: cover;
-
-}
-
-.left-reg-text {
-  background: black;
-  color: white;
-  width: 200px;
-  height: 100px;
-  margin: -70px 0 0 -120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.left-reg-text .left-reg-title {
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.left-reg .left-reg-text h4 {
-  color: #fff;
-}
-
-.right-reg {
-  float: left;
-}
-
-
-
-
-
 
 
