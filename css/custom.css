@@ -38,10 +38,10 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.486);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
+
 .navbar .form-control:focus {
   border-color: #000000;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-  0 0 8px rgb(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(0, 0, 0, 0.075);
   transition: .5s ease-out;
   border-radius: 50px !important;
 }
@@ -420,10 +420,12 @@ HERO SECTION
 }
 
 #register .form-control {
+  transition: .5s ease-out;
+  border-radius: 0;
   color: #000000;
 }
 
-#register .form-control:focus{
+#register .form-control:focus {
   border-color: #F8CF06;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(248, 190, 0);
   transition: .5s ease-out;
@@ -431,11 +433,10 @@ HERO SECTION
 }
 
 #register .form-control:hover {
-border-color: #F8CF06;
-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-0 0 8px rgb(248, 190, 0);
-transition: .5s ease-out;
-border-radius: 50px;
+  border-color: #F8CF06;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(248, 190, 0);
+  transition: .5s ease-out;
+  border-radius: 50px;
 }
 
 #register .legal-agreement {
@@ -457,4 +458,136 @@ border-radius: 50px;
 
 #register .have-account a:hover {
   color: #F8CF06;
+}
+
+/* login */
+
+.login-body {
+  background-color: #f3f2f0;
+}
+
+#login {
+  background-color: #FFF;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#login h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#login p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#login .btn-default {
+  background-color: #000000;
+  color: #FFF;
+  border-radius: 100px;
+}
+
+#login .btn-default:hover {
+  color: #F8CF06;
+  background-color: #000000f3;
+}
+
+#login .form-control {
+  transition: .5s ease-out;
+  border-radius: 0;
+  color: #000000;
+}
+
+#login .form-control:focus {
+  border-color: #F8CF06;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(248, 190, 0);
+  transition: .5s ease-out;
+  border-radius: 50px;
+}
+
+#login .form-control:hover {
+  border-color: #F8CF06;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(248, 190, 0);
+  transition: .5s ease-out;
+  border-radius: 50px;
+}
+
+#login .dont-have-account {
+  font-weight: 300px;
+}
+
+#login .dont-have-account a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#login .dont-have-account a:hover {
+  color: #F8CF06;
+}
+
+#login .forgot-password a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#login .forgot-password a:hover {
+  color: #F8CF06;
+}
+
+#login .or-block {
+  border-bottom: 2px solid #dbdbdb;
+  max-width: 400px;
+  text-align: center;
+  line-height: 0;
+  margin: 20px auto;
+}
+
+#login .or-block span {
+  background: #fff;
+  padding: 0 10px;
+  color: #dedede;
+}
+
+#login .social-login-btn {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login .social-login-btn .btn-primary {
+  background-color: #3d5c98;
+  border: #3d5c98;
+}
+
+#login .social-login-btn .btn-primary:hover {
+  background-color: #3d5b98e3;
+  border: #3d5b98e3;
+}
+
+#login .social-login-btn .btn-danger {
+  background: #f43e28;
+  border: #f43e28;
+}
+
+#login .social-login-btn .btn-danger:hover {
+    background: #f43c28cc;
+    border: #f43c28cc;
+}
+
+#login .social-login-btn .fb-login,.google-login {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#login .social-login-btn .fa {
+  float: left;
+  font-size: 20px;
 }
