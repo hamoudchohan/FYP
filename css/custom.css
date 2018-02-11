@@ -175,8 +175,11 @@ HERO SECTION
 }
 
 /* Gender Section */
+#gender .container-fluid {
+  background: #f3f2f0;
+}
 
-#gender h2 {
+ #gender h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
@@ -198,7 +201,7 @@ HERO SECTION
 }
 
 #gender .women {
-  background: #ec363d;
+  background: #F20E0E;
 }
 
 #gender .men {
