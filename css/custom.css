@@ -790,3 +790,9 @@ HERO SECTION
 #catogery-tab .container {
   background: #FFF;
 }
+
+#catogery-tab .nav .nav-item a {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
