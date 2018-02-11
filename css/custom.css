@@ -267,6 +267,28 @@ HERO SECTION
   color: #000000;
   text-decoration: underline;
 }
+#browse-shop .card-body h5 {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+
+#browse-shop .card .card-body a {
+  text-decoration: none;
+}
+
+#browse-shop .card .card-body a h5:hover {
+  color: #F8CF06;
+}
+
+#browse-shop .card .card-shop-btn {
+  color: #000000;
+  font-size: 14px;
+}
+
+#browse-shop .card .card-shop-btn:hover {
+  color: #F8CF06;
+}
 
 /* brand slider */
 
@@ -760,4 +782,8 @@ HERO SECTION
 
 #trends-to-inspire .card .card-shop-btn:hover {
   color: #F8CF06;
+}
+
+#catogery-tab .container {
+  background: #FFF;
 }
