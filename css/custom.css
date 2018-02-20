@@ -201,11 +201,14 @@ HERO SECTION
 }
 
 #gender .women {
-  background: #F20E0E;
+  background: url('../img/female-bg.jpg');
+  background-size: contain;
+  
 }
 
 #gender .men {
-  background: #F8CF06;
+  background: url('../img/male-bg.jpg');
+  background-size: contain;
 }
 
 #gender .women:hover .overlay-gender {
