@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FYP | Login</title>
+  <title>FYP | Product List</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
   <!-- Font-Awesome -->
@@ -18,138 +18,89 @@
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/card.css">
+  <!-- <link rel="stylesheet" href="css/card.css"> -->
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
   <![endif]-->
 </head>
 
-<body class="login-body">
+<body>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-
-  <a href="index.html" class="navbar-brand mr-5 ml-5">
-    <span>Brand Logo</span>
-  </a>
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-
-    <div class="col-sm-8 col-md-6 search-bar">
-      <form class="navbar-form" role="search">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search" name="q">
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit">
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <ul class="navbar-nav mr-5">
-      <li class="nav-item">
-        <a href="mens.html" class="nav-link">
-          Men
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          WOMEN
-        </a>
-      </li>
-    </ul>
-    <ul id="fa_icons" class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa fa-shopping-cart"></i>
-          <span class="badge badge-notify">3</span>
-        </a>
-      </li>
-      <li class="nav-item mr-3">
-        <a href="#" class="nav-link">
-          <i class="fa fa-heart"></i>
-          <span class="badge badge-notify bd-heart">4</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="register.html" class="nav-link">
-          Join
-        </a>
-
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          /
-        </a>
-
-      </li>
-      <li class="nav-item">
-        <a href="login.html" class="nav-link">
-          Sign In
-        </a>
-
-      </li>
-
-    </ul>
-
-  </div>
-
-</nav>
-<!-- nav end -->
-
-  <!-- sign-up Form -->
-
-  <section id="login">
-    <div class="container p-5 mt-5 mb-5">
-      <h3>Brand Logo</h3>
-      <p>Sign in</p>
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <form>
-            <div class="form-group">
-              <label for="email-username">Username or Email</label>
-              <input type="email" class="form-control" id="email-username" aria-describedby="email" placeholder="Enter username or email">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  
+    <a href="index.html" class="navbar-brand mr-5 ml-5">
+      <span>Brand Logo</span>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+  
+      <div class="col-sm-8 col-md-6 search-bar">
+        <form class="navbar-form" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
             </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-
-            <button type="submit" class="btn btn-default btn-block mt-4">Join</button>
-          </form>
-
-          <div class="forgot-password text-center mt-3">
-            <a href="#">Forgot your password?</a>
           </div>
-          <div class="or-block">
-            <span>or</span>
-          </div>
-         <div class="social-login-btn">
-     
-              <button class="btn btn-primary fb-login"><i class="fa fa-facebook"></i> sign in with facebook</button>
-   
-            
-              <button class="btn btn-danger google-login"><i class="fa fa-google"></i> sign in with google</button>
-    
-         </div>
-          <div class="dont-have-account text-center mt-3">
-            New to Brand?
-            <a href="#">
-              Sign up
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-3"></div>
+        </form>
       </div>
+  
+      <ul class="navbar-nav mr-5">
+        <li class="nav-item">
+          <a href="mens.html" class="nav-link">
+            Men
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            WOMEN
+          </a>
+        </li>
+      </ul>
+      <ul id="fa_icons" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-notify">3</span>
+          </a>
+        </li>
+        <li class="nav-item mr-3">
+          <a href="#" class="nav-link">
+            <i class="fa fa-heart"></i>
+            <span class="badge badge-notify bd-heart">4</span>
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="register.html" class="nav-link">
+            Join
+          </a>
+  
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            /
+          </a>
+  
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">
+            Sign In
+          </a>
+  
+        </li>
+  
+      </ul>
+  
     </div>
-  </section>
-
+  
+  </nav>
+  <!-- nav end -->
 
 
 
@@ -296,6 +247,7 @@
     </div>
 
   </footer>
+
   <!-- Boostrap-Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

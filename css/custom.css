@@ -799,3 +799,32 @@ HERO SECTION
   font-weight: 700;
   text-transform: uppercase;
 }
+
+#catogery-tab .tab-content a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#catogery-tab .tab-content a h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#catogery-tab .tab-content a :hover {
+  color: #F8CF06;
+}
+
+#catogery-tab .tab-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
