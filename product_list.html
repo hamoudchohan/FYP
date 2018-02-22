@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -143,25 +143,147 @@
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <span class="h1" id="amount-label">
-                  <span class="pricing__dollar">€</span>
-                </span>
                 <div class="row">
-                  <div class="col-xs-10 col-xs-offset-1">
-                    <!-- As seen here https://bootsnipp.com/snippets/featured/bootstrap-pricing-slider-donations -->
-                    <input id="range-slider" type="range" min="0" max="100" step="10" value="0">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="price1">Min-Price</label>
+                      <select class="form-control" id="price1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="price2">Max-Price</label>
+                      <select class="form-control" id="price2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-                
+
               </li>
+
 
             </ul>
           </div>
-        </div>
 
+          <div class="card mt-4 mb-4" style="width: 18rem;">
+            <div class="card-header">
+              Availabilty
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <input type="checkbox" name="availability"> In Stock
+              </li>
+            </ul>
+          </div>
+
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  Color
+                  <i class="fa fa-caret-down"></i>
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  Size
+                  <i class="fa fa-caret-down"></i>
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Material
+                  <i class="fa fa-caret-down"></i>
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-7">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">Mens</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Shoes</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">Vanz</li>
+               <li class="ml-auto">
+                <div class="  ">
+                  <div class="form-group">
+                
+                    <select class="form-control" id="sort">
+                      <option>sort by recommendation</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                </div>
+               </li>
+            </ol>
+          </nav>
+<div class="row">
+  <div class="col-sm-6"><div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="img/jeans.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div></div>
+  <div class="col-sm-6"><div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="img/jeans.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div></div>
+</div>
+          
+        </div>
+        
       </div>
     </div>
+
+    
   </section>
+
+  
 
 
   <!-- Footer -->
@@ -314,7 +436,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+
   <!-- Owl -->
   <script src="js/owl.carousel.min.js"></script>
   <!-- Custom Script -->

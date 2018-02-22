@@ -854,3 +854,66 @@ HERO SECTION
   padding-top: 5px;
 }
 
+#product-listing .list-group-item label {
+  font-size: 14px;
+}
+
+#product-listing .list-group-item .form-control {
+  transition: .5s ease-out;
+  border-radius: 0; 
+}
+
+#product-listing .list-group-item #price1:focus {
+border-color: #F8CF06;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+0 0 8px rgb(248, 190, 0);
+transition: .5s ease-out;
+border-radius: 50px;
+} 
+
+#product-listing .list-group-item #price2:focus {
+  border-color: #F8CF06;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+  0 0 8px rgb(248, 190, 0);
+  transition: .5s ease-out;
+  border-radius: 50px;
+}
+
+#product-listing #accordion .card-header a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+#product-listing #accordion .card-header a:hover {
+  color: #F8CF06;
+}
+
+#product-listing #accordion .card-header {
+  background-color: #FFFFFF;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+#product-listing #accordion .fa {
+  float: right;
+}
+
+#product-listing .breadcrumb {
+  background: #FFF;
+}
+
+#product-listing .breadcrumb a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+#product-listing .sorting #sort:focus {
+  border-color: #F8CF06;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(248, 190, 0);
+}
+
+#product-listing .sorting .form-group{
+  border: 0;
+}
+
