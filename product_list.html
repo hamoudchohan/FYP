@@ -15,6 +15,8 @@
   <!-- Owl-Car -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -24,19 +26,19 @@
   <![endif]-->
 </head>
 
-<body>
+<body id="product-page-body">
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  
+
     <a href="index.html" class="navbar-brand mr-5 ml-5">
       <span>Brand Logo</span>
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarCollapse">
-  
+
       <div class="col-sm-8 col-md-6 search-bar">
         <form class="navbar-form" role="search">
           <div class="input-group">
@@ -49,7 +51,7 @@
           </div>
         </form>
       </div>
-  
+
       <ul class="navbar-nav mr-5">
         <li class="nav-item">
           <a href="mens.html" class="nav-link">
@@ -75,33 +77,91 @@
             <span class="badge badge-notify bd-heart">4</span>
           </a>
         </li>
-  
+
         <li class="nav-item">
           <a href="register.html" class="nav-link">
             Join
           </a>
-  
+
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
             /
           </a>
-  
+
         </li>
         <li class="nav-item">
           <a href="login.html" class="nav-link">
             Sign In
           </a>
-  
+
         </li>
-  
+
       </ul>
-  
+
     </div>
-  
+
   </nav>
   <!-- nav end -->
+  <section id="product-page-header">
+    <div class="container mt-5">
+      <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+          <h2>
+            Mens *Dynamic Name* Jeans
+          </h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fugiat ipsa eligendi. Quod excepturi, ullam vero
+            rem voluptate odio, minus debitis similique enim, aut omnis quis voluptates at? Delectus, beatae. Vitae maxime
+            blanditiis nobis nulla, veniam voluptas error deleniti molestias aspernatur, iste repellendus amet fugit repudiandae
+            nemo aperiam ad?</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="product-listing">
+    <div class="container mb-5 p-5">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              On Sale
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <input type="radio" name="onSale"> 20%</li>
+              <li class="list-group-item">
+                <input type="radio" name="onSale"> 30%</li>
+              <li class="list-group-item">
+                <input type="radio" name="onSale"> 40%</li>
+            </ul>
+          </div>
+
+          <div class="card mt-5" style="width: 18rem;">
+            <div class="card-header">
+              Price
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="h1" id="amount-label">
+                  <span class="pricing__dollar">€</span>
+                </span>
+                <div class="row">
+                  <div class="col-xs-10 col-xs-offset-1">
+                    <!-- As seen here https://bootsnipp.com/snippets/featured/bootstrap-pricing-slider-donations -->
+                    <input id="range-slider" type="range" min="0" max="100" step="10" value="0">
+                  </div>
+                </div>
+                
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
   <!-- Footer -->
@@ -254,6 +314,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
   <!-- Owl -->
   <script src="js/owl.carousel.min.js"></script>
   <!-- Custom Script -->

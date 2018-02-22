@@ -820,11 +820,37 @@ HERO SECTION
   list-style: none;
 }
 
+/* product listing page */
+#product-page-body {
+  background-color: #f3f2f0;
+}
+#product-page-header .jumbotron {
+  background: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#product-page-header h2 {
+  font-weight: 600;
+}
 
 
+#product-page-header .jumbotron .lead {
+  font-size: 14px;
+}
 
+#product-listing .container {
+  background: #FFFFFF;
+}
 
+#product-listing .card,
+.card-header,
+.list-group-item {
+  border: 0px;
+}
 
-
-
+#product-listing .list-group-item {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
 
