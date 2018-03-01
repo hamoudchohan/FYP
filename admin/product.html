@@ -14,6 +14,7 @@
   <!-- CSS Files -->
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
   <link href="../css/light-bootstrap-dashboard.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/adminCustom.css">
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <!-- <link href="../assets/css/demo.css" rel="stylesheet" /> -->
 </head>
@@ -101,8 +102,7 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="no-icon">Dropdown</span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -238,17 +238,17 @@
                 <div class="card-body">
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Details</a>
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#details" role="tab" aria-controls="home" aria-selected="true">Details</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Image</a>
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#img" role="tab" aria-controls="profile" aria-selected="false">Image</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
                     </li>
                   </ul>
                   <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details">
                       <form>
                         <div class="row">
                           <div class="col-md-3 pr-1">
@@ -263,7 +263,7 @@
                               <textarea row="5" class="form-control" placeholder="product description" name="description"></textarea>
                             </div>
                           </div>
-                      
+
                         </div>
                         <div class="row">
                           <div class="col-md-4 pr-1">
@@ -303,47 +303,75 @@
                             </div>
                           </div>
                         </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Base Price</label>
+                              <input type="text" class="form-control" name="basePrice" placeholder="enter base price of product">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Current Price</label>
+                              <input type="text" class="form-control" name="currentPrice" placeholder="enter current price of product">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Tax</label>
+                              <input type="text" class="form-control" name="tax" placeholder="enter current price of product">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-2 pr-1">
+                            <div class="form-group">
+                              <label>size</label>
+                              <input type="text" class="form-control" placeholder="size" name="size">
+                            </div>
+                          </div>
+                          <div class="col-md-3 px-1">
+                            <div class="form-group">
+                              <label>color</label>
+                              <input type="text" class="form-control" placeholder="color" name="color">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <label>quantity</label>
+                              <input type="number" class="form-control" placeholder="quantity" name="quantity">
+                            </div>
+                          </div>
+                          <div class="col-md-2 sp-check">
+                            <div class="form-group">
+                              <label>featured</label>
+                              <input type="checkbox" class="form-control" name="featured">
+                            </div>
+                          </div>
+                          <div class="col-md-2 pl-1 sp-check">
+                            <div class="form-group">
+                              <label>hide</label>
+                              <input type="checkbox" class="form-control" name="hide">
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <hr>
                         <div class="row">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <label>Address</label>
-                              <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                              <label>Note</label>
+                              <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description"></textarea>
                             </div>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-4 pr-1">
-                            <div class="form-group">
-                              <label>City</label>
-                              <input type="text" class="form-control" placeholder="City" value="Mike">
-                            </div>
-                          </div>
-                          <div class="col-md-4 px-1">
-                            <div class="form-group">
-                              <label>Country</label>
-                              <input type="text" class="form-control" placeholder="Country" value="Andrew">
-                            </div>
-                          </div>
-                          <div class="col-md-4 pl-1">
-                            <div class="form-group">
-                              <label>Postal Code</label>
-                              <input type="number" class="form-control" placeholder="ZIP Code">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label>About Me</label>
-                              <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
-                            </div>
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                        <button type="submit" class="btn btn-info btn-fill pull-right">Submit</button>
                         <div class="clearfix"></div>
                       </form>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="tab-pane fade" id="img" role="tabpanel" aria-labelledby="profile-tab">
 
                     </div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">

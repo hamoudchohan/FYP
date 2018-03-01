@@ -1,0 +1,8 @@
+.nav-tabs .nav-link.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+.card label {
+  color: #000000;
+}
