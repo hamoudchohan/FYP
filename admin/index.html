@@ -14,14 +14,14 @@
 	<!-- CSS Files -->
 	<link href="../css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../css/light-bootstrap-dashboard.css" rel="stylesheet" />
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<!-- <link href="../assets/css/demo.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="../css/adminCustom.css">
+	
 </head>
 
 <body>
 	<div class="wrapper">
 		<div class="sidebar" data-image="../img/sidebar-4.jpg" data-color="blue">
-
+		
 			<div class="sidebar-wrapper">
 				<div class="logo">
 					<a href="#" class="simple-text">
@@ -36,21 +36,41 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="#" data-toggle="collapse" data-target="#categories-drop" aria-expanded="false" aria-controls="categories-drop">
 							<i class="nc-icon nc-tag-content"></i>
-							<p>Categories</p>
+							<p>Categories
+								<i class="fa fa-sort-desc" style="font-size: 20px;"></i>
+							</p>
+						</a>
+						<ul id="categories-drop" class="collapse p-3" aria-labelledby="categories-drop" data-parent="#accordion">
+							<li class="ml-5">
+								<a href="#">Brands</a>
+							</li>
+							<li class="ml-5">
+								<a href="#">Brands</a>
+							</li>
+							<li class="ml-5">
+								<a href="#">Brands</a>
+							</li>
+						</ul>
+					</li>
+		
+					<li class="nav-item">
+						<a class="nav-link" href="product.html">
+							<i class="nc-icon nc-layers-3"></i>
+							<p>Products</p>
 						</a>
 					</li>
-							<li class="nav-item">
-								<a class="nav-link" href="product.html">
-									<i class="nc-icon nc-layers-3"></i>
-									<p>Products</p>
-								</a>
-							</li>
-
-
-
-
+					<li class="nav-item">
+						<a class="nav-link" href="sales.html">
+							<i class="nc-icon nc-cart-simple"></i>
+							<p>Sales</p>
+						</a>
+					</li>
+		
+		
+		
+		
 				</ul>
 			</div>
 		</div>
@@ -58,9 +78,9 @@
 			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg " color-on-scroll="500">
 				<div class=" container-fluid  ">
-					<a class="navbar-brand" href="#pablo"> Dashboard </a>
+					<a class="navbar-brand" href="#pablo"> Dashboard</a>
 					<button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index"
-					  aria-expanded="false" aria-label="Toggle navigation">
+					 aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-bar burger-lines"></span>
 						<span class="navbar-toggler-bar burger-lines"></span>
 						<span class="navbar-toggler-bar burger-lines"></span>
@@ -73,26 +93,8 @@
 									<span class="d-lg-none">Dashboard</span>
 								</a>
 							</li>
-							<li class="dropdown nav-item">
-								<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-									<i class="nc-icon nc-planet"></i>
-									<span class="notification">5</span>
-									<span class="d-lg-none">Notification</span>
-								</a>
-								<ul class="dropdown-menu">
-									<a class="dropdown-item" href="#">Notification 1</a>
-									<a class="dropdown-item" href="#">Notification 2</a>
-									<a class="dropdown-item" href="#">Notification 3</a>
-									<a class="dropdown-item" href="#">Notification 4</a>
-									<a class="dropdown-item" href="#">Another notification</a>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">
-									<i class="nc-icon nc-zoom-split"></i>
-									<span class="d-lg-block">&nbsp;Search</span>
-								</a>
-							</li>
+		
+		
 						</ul>
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
@@ -100,20 +102,7 @@
 									<span class="no-icon">Account</span>
 								</a>
 							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-								  aria-expanded="false">
-									<span class="no-icon">Dropdown</span>
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something</a>
-									<a class="dropdown-item" href="#">Something else here</a>
-									<div class="divider"></div>
-									<a class="dropdown-item" href="#">Separated link</a>
-								</div>
-							</li>
+		
 							<li class="nav-item">
 								<a class="nav-link" href="#pablo">
 									<span class="no-icon">Log out</span>
@@ -124,217 +113,33 @@
 				</div>
 			</nav>
 			<!-- End Navbar -->
+
+
+
 			<div class="content">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-4">
-							<div class="card ">
-								<div class="card-header ">
-									<h4 class="card-title">Email Statistics</h4>
-									<p class="card-category">Last Campaign Performance</p>
+						<div class="col-sm-4">
+							<div class="card p-3">
+								<div class="card-body">
+									<span class="number text-success">20</span>
+									<span class="icon">
+										<i class="fa fa-shopping-cart fa-5x float-right mr-5"></i>
+									</span>
 								</div>
-								<div class="card-body ">
-									<div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-								</div>
-								<div class="card-footer ">
-									<div class="legend">
-										<i class="fa fa-circle text-info"></i> Open
-										<i class="fa fa-circle text-danger"></i> Bounce
-										<i class="fa fa-circle text-warning"></i> Unsubscribe
-									</div>
-									<hr>
-									<div class="stats">
-										<i class="fa fa-clock-o"></i> Campaign sent 2 days ago
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="card ">
-								<div class="card-header ">
-									<h4 class="card-title">Users Behavior</h4>
-									<p class="card-category">24 Hours performance</p>
-								</div>
-								<div class="card-body ">
-									<div id="chartHours" class="ct-chart"></div>
-								</div>
-								<div class="card-footer ">
-									<div class="legend">
-										<i class="fa fa-circle text-info"></i> Open
-										<i class="fa fa-circle text-danger"></i> Click
-										<i class="fa fa-circle text-warning"></i> Click Second Time
-									</div>
-									<hr>
-									<div class="stats">
-										<i class="fa fa-history"></i> Updated 3 minutes ago
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="card ">
-								<div class="card-header ">
-									<h4 class="card-title">2017 Sales</h4>
-									<p class="card-category">All products including Taxes</p>
-								</div>
-								<div class="card-body ">
-									<div id="chartActivity" class="ct-chart"></div>
-								</div>
-								<div class="card-footer ">
-									<div class="legend">
-										<i class="fa fa-circle text-info"></i> Tesla Model S
-										<i class="fa fa-circle text-danger"></i> BMW 5 Series
-									</div>
-									<hr>
-									<div class="stats">
-										<i class="fa fa-check"></i> Data information certified
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="card  card-tasks">
-								<div class="card-header ">
-									<h4 class="card-title">Tasks</h4>
-									<p class="card-category">Backend development</p>
-								</div>
-								<div class="card-body ">
-									<div class="table-full-width">
-										<table class="table">
-											<tbody>
-												<tr>
-													<td>
-														<div class="form-check">
-															<label class="form-check-label">
-																<input class="form-check-input" type="checkbox" value="">
-																<span class="form-check-sign"></span>
-															</label>
-														</div>
-													</td>
-													<td>Sign contract for "What are conference organizers afraid of?"</td>
-													<td class="td-actions text-right">
-														<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-link">
-															<i class="fa fa-edit"></i>
-														</button>
-														<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-link">
-															<i class="fa fa-times"></i>
-														</button>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="form-check">
-															<label class="form-check-label">
-																<input class="form-check-input" type="checkbox" value="" checked>
-																<span class="form-check-sign"></span>
-															</label>
-														</div>
-													</td>
-													<td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-													<td class="td-actions text-right">
-														<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-link">
-															<i class="fa fa-edit"></i>
-														</button>
-														<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-link">
-															<i class="fa fa-times"></i>
-														</button>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="form-check">
-															<label class="form-check-label">
-																<input class="form-check-input" type="checkbox" value="" checked>
-																<span class="form-check-sign"></span>
-															</label>
-														</div>
-													</td>
-													<td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro
-														Detroit
-													</td>
-													<td class="td-actions text-right">
-														<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-link">
-															<i class="fa fa-edit"></i>
-														</button>
-														<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-link">
-															<i class="fa fa-times"></i>
-														</button>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="form-check">
-															<label class="form-check-label">
-																<input class="form-check-input" type="checkbox" checked>
-																<span class="form-check-sign"></span>
-															</label>
-														</div>
-													</td>
-													<td>Create 4 Invisible User Experiences you Never Knew About</td>
-													<td class="td-actions text-right">
-														<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-link">
-															<i class="fa fa-edit"></i>
-														</button>
-														<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-link">
-															<i class="fa fa-times"></i>
-														</button>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="form-check">
-															<label class="form-check-label">
-																<input class="form-check-input" type="checkbox" value="">
-																<span class="form-check-sign"></span>
-															</label>
-														</div>
-													</td>
-													<td>Read "Following makes Medium better"</td>
-													<td class="td-actions text-right">
-														<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-link">
-															<i class="fa fa-edit"></i>
-														</button>
-														<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-link">
-															<i class="fa fa-times"></i>
-														</button>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="form-check">
-															<label class="form-check-label">
-																<input class="form-check-input" type="checkbox" value="" disabled>
-																<span class="form-check-sign"></span>
-															</label>
-														</div>
-													</td>
-													<td>Unfollow 5 enemies from twitter</td>
-													<td class="td-actions text-right">
-														<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-link">
-															<i class="fa fa-edit"></i>
-														</button>
-														<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-link">
-															<i class="fa fa-times"></i>
-														</button>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="card-footer ">
-									<hr>
-									<div class="stats">
-										<i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
-									</div>
+								<hr>
+								<div class="card-footer text-center">
+									<span class="heading">Total Sale</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
+
+
 			<footer class="footer">
 				<div class="container">
 					<nav>

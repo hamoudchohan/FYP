@@ -1,3 +1,21 @@
+
+.sidebar-wrapper #categories-drop a {
+  color: #FFF;
+}
+
+.number {
+  font-size: 50px;
+  
+}
+
+.icon .fa {
+  color: red;
+}
+
+.heading {
+  font-size: 30px;
+}
+
 .nav-tabs .nav-link.active {
   color: #000000;
   font-weight: bold;
@@ -62,3 +80,23 @@
 .image-preview-input-title {
   margin-left: 2px;
 }
+
+
+
+#salesContent .input-group-text {
+  background-color: #2A64B7;
+  color: #fff;
+}
+
+
+#salesContent .sub-total{
+  padding: 10px;
+  background-color: #06d80657;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+#salesContent #dateField {
+  display: none;
+}
+
